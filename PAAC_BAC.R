@@ -3,7 +3,7 @@
 #' This function calculates the Pseudo Amino Acid Composition (PseAAC)
 
 extractPAAC_BAC <- function(
-  x, kayes, props = c("Hydrophobicity", "Hydrophilicity", "SideChainMass"),
+  x, y, props = c("Hydrophobicity", "Hydrophilicity", "SideChainMass"),
   lambda = 10, w = 0.05, customprops = NULL) {
   
   protcheck <- function(x) {
@@ -23,7 +23,7 @@ extractPAAC_BAC <- function(
     stop('Length of the protein sequence must be greater than "lambda"')
   }
 
-  AAidx <- read.csv(kayes, header = TRUE)
+  AAidx <- read.csv(y, header = TRUE)
 
   tmp <- data.frame(
     AccNo = c("Hydrophobicity", "Hydrophilicity", "SideChainMass"),
