@@ -1,6 +1,3 @@
-#x<-"D:\\PARGT_Windows\\selected_train_test_merged_file.csv"
-#y<-"D:\\PARGT_Windows\\input_seq.csv"
-
 
 predict_results<- function(x,y) {
   
@@ -12,9 +9,7 @@ predict_results<- function(x,y) {
   #library(ROCR)
   #library(klaR)
   
-  #for(kayes in 21:50){
-  #kayes<-123
-  
+   
   #list_under<-c()
   #title<-paste0("aac", ",", "bl", ",", "dfr")
   
@@ -80,8 +75,8 @@ predict_results<- function(x,y) {
   ncol(train)
   test<-data_other
   
-  kayes<-123
-  set.seed(kayes)
+  suraiya<-123
+  set.seed(suraiya)
   
   #train$Output[train$Output==1]<-"Yes"
   train$Output<-as.factor(train$Output)
@@ -123,7 +118,6 @@ predict_results<- function(x,y) {
   
 }
 
-#x<-"E:\\PARGT\\training_set_aac.csv"
-#y<-"E:\\PARGT\\input_seq.csv"
+
 
 #predict_results(x,y)
