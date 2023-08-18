@@ -61,9 +61,9 @@ library(caret)
   ncol(train)
   test<-data_other
   
-  kayes<-123
-  set.seed(kayes)
-  #set.seed(kayes)
+  suraiya<-123
+  set.seed(suraiya)
+
   train$Output<-as.factor(train$Output)
   #tmodel2<-tune(svm, Output~., data = train, ranges = list(epsilon =seq(0,1,0.1), cost=2^(2:7)))
   tmodel2<-tune(svm, Output~., data = train, probability = TRUE , ranges = list(epsilon =seq(0,1,0.1), cost=2^(2:7)))
