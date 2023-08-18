@@ -1,4 +1,4 @@
-df<-read.csv("D:\\PARGT_Windows\\new_with_8CTD\\new_with_8CTD\\p85\\selected_train_test_merged_file.csv")
+df<-read.csv("D:\\Windows\\new_with_8CTD\\new_with_8CTD\\p85\\selected_train_test_merged_file.csv")
 nc<-ncol(df)
 df<-df[,-nc]
 clnm<-colnames(df)
